@@ -48,6 +48,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.99.0'
 
   gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
+  gem 'rails_12factor'
 end
 
 group :test do
