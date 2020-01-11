@@ -37,15 +37,14 @@ group :development, :test do
   gem 'byebug'
 
   gem 'listen', '>= 3.0.5', '< 3.2'
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 3.7'
+
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
-  gem 'rspec', '~> 2.99.0'
-  gem 'rspec-rails', '~> 2.99.0'
+  gem 'rspec', '~> 3.9.0'
+  gem 'rspec-rails', '~> 3.9.0'
 
   gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
@@ -55,6 +54,13 @@ end
 group :test do
   gem 'database_cleaner'
 end
+
+group :development do
+  # Access an IRB console on exception pages or by using <%= console %> in views
+  gem 'web-console', '~> 3.7'
+end
+
+gem 'rails-controller-testing'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
