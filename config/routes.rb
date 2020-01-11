@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -5,10 +6,15 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'pins#index'
 
+  get 'pins/name-:slug' => 'pins#show_by_name'
+
   resources :pins
 
   get '/library' => 'pins#index'
-    
+  
+
+
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
