@@ -26,3 +26,28 @@ h1 {
 hr{
   clear:both;
 }
+
+/*Styles for new form page*/
+
+label {
+  font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  padding-right: 25px;
+}
+
+.form-group {
+  padding: 40px;
+  min-height: 50px;
+  max-width: 280px;
+  background-color: #fff;
+  border: 1px solid #efefef;
+}
+
+.error {
+  color: #cc002e;
+  font-weight: bold;
+}
+
+
